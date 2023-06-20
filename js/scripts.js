@@ -26,7 +26,40 @@ auxText = firstList.children[2].textContent;
 firstList.children[2].textContent = secondList.children[2].textContent;
 secondList.children[2].textContent = auxText;
 
-//  3 ejercicio
-const liElement = document.querySelectorAll('li');
+// Usando este HTML muestra por consola el número de etiquetas que hay de cada cosa.
+//   - Hay 1 Header
+//   - Hay 1 h1
+//   - Hay 2 nav
+//     ......
 
+const bodyElement = document.querySelectorAll('body');
+const headerElement = document.querySelectorAll('header');
+const h1Element = document.querySelectorAll('h1');
+const h2Element = document.querySelectorAll('h2');
+const h3Element = document.querySelectorAll('h3');
+const navElement = document.querySelectorAll('nav');
+const ulElement = document.querySelectorAll('ul');
+const liElement = document.querySelectorAll('li');
+const sectionElement = document.querySelectorAll('section');
+const articleElement = document.querySelectorAll('article');
+const pElement = document.querySelectorAll('p');
+const aElement = document.querySelectorAll('a');
+const imgElement = document.querySelectorAll('img');
+const spanElement = document.querySelectorAll('span');
+const footerElement = document.querySelectorAll('footer');
+
+console.log(`Hay ${bodyElement.length} ${bodyElement[0].tagName}`);
+console.log(`Hay ${headerElement.length} ${headerElement[0].tagName}`);
+console.log(`Hay ${h1Element.length} ${h1Element[0].tagName}`);
+console.log(`Hay ${h2Element.length} ${h2Element[0].tagName}`);
+console.log(`Hay ${h3Element.length} ${h3Element[0].tagName}`);
+console.log(`Hay ${navElement.length} ${navElement[0].tagName}`);
+console.log(`Hay ${ulElement.length} ${ulElement[0].tagName}`);
 console.log(`Hay ${liElement.length} ${liElement[0].tagName}`);
+console.log(`Hay ${sectionElement.length} ${sectionElement[0].tagName}`);
+console.log(`Hay ${articleElement.length} ${articleElement[0].tagName}`);
+console.log(`Hay ${pElement.length} ${pElement[0].tagName}`);
+console.log(`Hay ${aElement.length} ${aElement[0].tagName}`);
+console.log(`Hay ${imgElement.length} ${imgElement[0].tagName}`);
+console.log(`Hay ${spanElement.length} ${spanElement[0].tagName}`);
+console.log(`Hay ${footerElement.length} ${footerElement[0].tagName}`);
